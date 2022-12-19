@@ -1,0 +1,8 @@
+import math
+
+def roof_slope(height, width):
+  slope = (height / width) * 100
+  angle = math.atan(slope / 100)
+  return math.degrees(angle)
+
+print(roof_slope(10, 20))  # Output: 8.434948822922017
